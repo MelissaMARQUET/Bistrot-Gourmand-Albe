@@ -1,0 +1,8 @@
+.header {
+    position: sticky;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2rem solid var(--dargrey);
+    background: var(--white);
+}

@@ -1,0 +1,39 @@
+/*________CSS organised_______
+__________with SMACSS_________
+______________________________*/
+/*
+-------Base-------*/
+@import url(CSS/Base/fonts.css);
+@import url(CSS/Base/base.css);
+@import url(CSS/Base/colors.css);
+/*Layout*/
+@import url(CSS/Layout/header.css);
+@import url(CSS/Layout/main.css);
+/*Module*/
+@import url(CSS/Module/homepage.css);
+@import url(CSS/Module/navbars.css);
+@import url(CSS/Module/section.css);
+/*@import url();*/
+/*_______________________________
+************Responsive***********
+________________________________
+Breakpoints used for resposive :
+/* 1400px / 16px = 87.5em *
+@media (max-width: 87.5em) {
+}
+/* 1200px / 16px = 75em *
+@media (max-width: 75em) {
+}
+/* 980px / 16px = 61.25em *
+@media (max-width: 61.25em) {
+}
+/* 800px / 16px = 50em *
+@media (max-width: 50em) {
+}
+/* 460px / 16px = 28.75em *
+@media (max-width: 28.75em) {
+}
+/* 200px / 16px = 12.5em *
+@media (max-width: 12.5em) {
+}
+*/

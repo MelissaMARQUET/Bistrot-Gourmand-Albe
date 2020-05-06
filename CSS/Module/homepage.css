@@ -1,0 +1,129 @@
+/*Navproperties in the navbars file*/
+/*____Page____*/
+#homepage {
+    width: 100%;
+    min-height: 95vh;
+    max-height: 100vh;
+    background-image:url(../../img/banniere.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.homepageContent {
+    min-height: 95vh;
+    max-height: 100vh;
+    width: 80rem;
+    margin: auto;
+    padding-top: 37rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/*____Text____*/
+.homepageText {
+    padding: 2rem 6rem;
+    background: var(--darkredtransparent);
+    color: var(--white);
+    text-align: center;
+}
+.homepageText h1 {
+    margin-bottom: 3rem;
+    border-bottom: 0.1rem solid var(--white);
+    font-size: 4rem;
+}
+.homepageText p {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+/*Nav*/
+.homepageNav {
+    list-style: none;
+    display: flex;
+}
+.homepageNav a {
+    display: block;
+    width: 20rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 0.2rem solid var(--white);
+    background: var(--dargrey);
+    color: var(--white);
+    text-align: center;
+}
+/*Link to next page*/
+.homepageLink {
+    display: block;
+    font-size: 6rem;
+    color: var(--white);
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+/*    animation-timing-function: ease-in-out;*/
+}
+/*animation on the link*/
+@keyframes slide {
+    0% {
+        opacity: 0;
+        margin-bottom: 6rem;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 0;
+    }
+}
+/*________________________
+.......Responsive.........
+__________________________
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    .homepageContent {
+        padding-top: 30rem;
+        width: 100%;
+    }
+    .homepageText {
+        width: 90%;
+    }
+    .homepageNav a {
+        width: 15rem;
+    }
+}
+/* 800px / 16px = 50em */
+@media (max-width: 50em) {
+    .homepageContent {
+        padding-top: 15rem;
+    }
+    .homepageNav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepageText {
+        padding: 1rem;
+        background: var(--darkredsemitransparent);
+    }
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    .homepageText h1 {
+        font-size: 4vh;
+    }
+    .homepageText p, .homepageNav a {
+        font-size: 2vh;
+    }
+}
+/* 200px / 16px = 12.5em */
+@media (max-width: 12.5em) {
+    .homepageText h1 {
+        font-size: 2vh;
+    }
+    .homepageText p {
+        font-size: 1vh;
+    }
+    .homepageNav a {
+        max-width: fit-content;
+        font-size: 1vh;
+    }
+}

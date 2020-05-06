@@ -1,0 +1,45 @@
+/*_________Main navbar__________
+*/
+/*Label and input need to be hidden*/
+.menu-mobile, #menu-mobile {
+    display: none;
+}
+/*Logo on the left*/
+#logo {
+    height: 4rem;
+}
+/*The ul for the navigation*/
+.headerNav {
+    display: flex;
+    list-style: none;
+}
+.headerNav a {
+    display: block;
+    width: 100%;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    color: var(--dargrey);
+    text-align: center;
+}
+.headerNav a:hover {
+    background: var(--darkred);
+    color: var(--white);
+    transition: color .5s;
+    transition: background .5s;
+}
+/*__________Menu screen___________
+____________under 800px___________*/
+/* 800px / 16px = 50em */
+@media (max-width: 50em) {
+    .headerNav {
+        display: none;
+    }
+    .menu-mobile {
+        display:block;
+        color: var(--dargrey);
+        font-size: 3rem;
+    }
+    nav input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+}

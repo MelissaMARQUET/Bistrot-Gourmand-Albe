@@ -1,0 +1,8 @@
+/*Colors declaration*/
+:root {
+    --darkred: #5C081E;
+    --darkredsemitransparent : rgba(92,8,30,0.8);
+    --darkredtransparent : rgba(92,8,30,0.6);
+    --dargrey: #626262;
+    --white: #FCFCFC;
+}
